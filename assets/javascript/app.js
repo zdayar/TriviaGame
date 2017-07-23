@@ -3,7 +3,7 @@ $(document).ready(function () {
     // triviaGame is the object which contains everything needed for the game
     var triviaGame = {
         QUESTION_TIMEOUT: 30,         // seconds
-        TIME_BTW_QUESTIONS: 6,        // seconds
+        TIME_BTW_QUESTIONS: 7,        // seconds
         questions: [],                // array of question - will be init'ed at start of the game
         currentQuestionIndex: 0,      // index of current round's question
         correctAnswers: 0,            // tally of correct answers
@@ -67,13 +67,13 @@ $(document).ready(function () {
                 ["Foot", "Stomach", "Head", "Hand"],
                 0,
                 "Foot (specifically the sole of the foot, from Latin planta, meaning sole)",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Gray834.svg/578px-Gray834.svg.png");
+                "http://teachmeanatomy.info/wp-content/uploads/Diagram-of-the-Sensory-or-Cutaneous-Innervation-of-the-Sole-of-the-Foot.jpg");
 
             this.addQuestion(
                 "A 2010 publicity-driven competition called the Carbuncle Cup focused on unpopular British what?",
                 ["Architecture", "Politicians", "Corporations", "Law"],
                 0,
-                "Architecture (or buildings - the word carbuncle, which normally refers to a big round red precious stone, or to an abscess or pimple on the face or neck, was famously used by the architecturally sensitive Prince Charles in his 1984 comment on the planned National Gallery extension in London as a 'monstrous carbuncle')",
+                "Architecture (or buildings - carbuncle refers to a big round red precious stone, or to an abscess or pimple on the face or neck). In 1984 Prince Charles called the planned National Gallery extension in London a 'monstrous carbuncle')",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Strata_SE1_from_Monument_2014.jpg/800px-Strata_SE1_from_Monument_2014.jpg");
 
             this.addQuestion(
@@ -82,6 +82,20 @@ $(document).ready(function () {
                 1,
                 "Painting (tones blended together avoiding sharp outlines - from 1800s Italian, sfumare, meaning shaded-off)",
                 "https://upload.wikimedia.org/wikipedia/commons/5/5f/MonaLisa_sfumato.jpeg");
+
+            this.addQuestion(
+                "In Dubai, Palm Jumeirah is a what?",
+                ["Artificial island development", "Camel-meat curry", "Scented aphrodisiac soap", "Public holiday"],
+                0,
+                "Artificial island development",
+                "https://www.venturesonsite.com/news/wp-content/uploads/2016/02/palm-jumeirah.jpg");
+
+            this.addQuestion(
+                "Catalonia, the Spanish Autonomous Community region comprising provinces Barcelona, Girona, Lleida and Tarragona, banned what in 2010 with effect from 2012?",
+                ["Lap-dancing", "Bullfighting", "Smoking in public outdoors", "Door-to-door selling"],
+                1,
+                "Bullfighting",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Madrid_Bullfight.JPG/269px-Madrid_Bullfight.JPG");
         },
 
         startGame: function () {

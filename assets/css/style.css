@@ -38,4 +38,12 @@ body {
     width: 20vw;
 }
 
+/* on phones, make the pics big enough to see */
+@media (max-width: 767px) {
+    .img-thumbnail {
+        height: 30vw;
+        width: 30vw;
+        margin-bottom: 1vw;
+    }
 
+}
