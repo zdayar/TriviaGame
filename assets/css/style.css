@@ -1,0 +1,41 @@
+/* Common items */
+body {
+    font-family: 'Lemonada', cursive;
+    font-size: 14px;
+    background-image: url("../images/trivia.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Overriding some bootstrap styles here */
+/* Make the jumbotron fonts smaller */
+.jumbotron {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.jumbotron h1 {
+    font-size: 40px;
+    line-height: 70px;
+}
+
+.jumbotron h3 {
+    font-size: 20px;
+}
+
+.jumbotron p {
+    font-size: 16px;
+}
+
+/* different background and font color for question */
+.panel-default>.panel-heading {
+    background-color: #da7f38;
+    color: white;
+}
+
+.img-thumbnail {
+    height: 20vw;
+    width: 20vw;
+}
+
+
